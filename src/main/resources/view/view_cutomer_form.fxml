@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="541.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewCutomerFormController">
+   <children>
+      <TableView fx:id="tblCustomers" layoutX="42.0" layoutY="103.0" prefHeight="364.0" prefWidth="514.0">
+         <columns>
+            <TableColumn fx:id="colId" prefWidth="75.0" style="-fx-background-color: grey;" text="ID" />
+            <TableColumn fx:id="colName" prefWidth="124.00005340576172" style="-fx-background-color: lightblue;" text="NAME" />
+            <TableColumn fx:id="colAddress" prefWidth="164.79998779296875" style="-fx-background-color: grey;" text="ADDRESS" />
+            <TableColumn fx:id="colSalary" prefWidth="150.39999389648438" style="-fx-background-color: lightblue;" text="SALARY" />
+         </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="30.0" layoutY="14.0" prefHeight="66.0" prefWidth="540.0" style="-fx-background-color: #001e8c;" text="VIEW CUSTOMER FORM" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnReload" layoutX="273.0" layoutY="489.0" mnemonicParsing="false" onAction="#btnReloadOnAction" style="-fx-background-color: red;" text="Reload" textFill="#f7efef">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
