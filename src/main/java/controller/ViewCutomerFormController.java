@@ -34,7 +34,7 @@ public class ViewCutomerFormController {
     @FXML
     void btnReloadOnAction(ActionEvent event) {
         List<Customer> connection = DBConnection.getInstance().getConnetion();
-
+        System.out.println("Reload btn");
 
     }
 
