@@ -57,6 +57,10 @@ public class CustomerFromController implements Initializable {
         
     @FXML
     void btnAddOnAction(ActionEvent event) {
+        colId.setCellValueFactory(new PropertyValueFactory<>("id"));
+        colName.setCellValueFactory(new PropertyValueFactory<>("name"));
+        colAddress.setCellValueFactory(new PropertyValueFactory<>("address"));
+        colSalary.setCellValueFactory(new PropertyValueFactory<>("salary"));
 
         connetion.add(new Customer(txtId.getText(), txtName.getText(), txtAddress.getText(), Double.parseDouble(txtSalary.getText())));
         loadTable();
@@ -119,11 +123,7 @@ public class CustomerFromController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        colId.setCellValueFactory(new PropertyValueFactory<>("id"));
-        colName.setCellValueFactory(new PropertyValueFactory<>("name"));
-        colAddress.setCellValueFactory(new PropertyValueFactory<>("address"));
-        colSalary.setCellValueFactory(new PropertyValueFactory<>("salary"));
-        loadTable();
+
     }
 
     private void loadTable() {
